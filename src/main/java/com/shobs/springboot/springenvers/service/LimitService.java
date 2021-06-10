@@ -76,8 +76,7 @@ public class LimitService {
                     log.info("add new limit: {}", l.getLimit());
                     limitEntityRepository.save(LimitEntity.builder()
                             .amount(l.getAmount())
-                            .limitKey(l.getLimit())
-                            .createdDate(Date.from(Instant.now())).build());
+                            .limitKey(l.getLimit()).build());
                 }
             });
         }
