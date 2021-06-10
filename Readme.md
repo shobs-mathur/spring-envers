@@ -5,7 +5,12 @@ In the context of ORM, database auditing means tracking and logging events relat
 
 Inspired by SQL triggers, the events are insert, update and delete operations on entities.
 
+The way entity auditing is setup in this project, the audit table (table suffixed with "_aud") will contain a history of changes made to entity records.
 
+
+
+
+Steps to get started -
 
 1. Use this SQL statement to create the database -
    
